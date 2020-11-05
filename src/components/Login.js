@@ -6,14 +6,13 @@ function Login({ passInfo }) {
   const [birthday, setBirthday] = useState("");
 
   const handleSubmit = () => {
-    passInfo(name);
+    passInfo(name, birthday);
     setName("");
     setBirthday("");
   };
 
   return (
     <div className="login">
-      <Welcome name={name} birthday={birthday} />
       <form className="login__form">
         <input
           value={name}
@@ -27,11 +26,9 @@ function Login({ passInfo }) {
           onChange={(e) => setBirthday(e.target.value)}
           className="login__birthday"
           type="date"
-          placeholder=""
         />
         <button
           onClick={handleSubmit}
-          type="submit"
           className="login__submit"
           disabled={!name || !birthday}
         >
