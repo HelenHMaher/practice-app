@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Welcome from "./Welcome";
 
 function Login({ passInfo }) {
   const [name, setName] = useState("");

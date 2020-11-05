@@ -6,7 +6,7 @@ function DisplayBirthday({ name, birthday }) {
   return (
     <div className="displayBirthday">
       <p>
-        {name}, you are {date} year{date != 1 && "s"} old!!
+        {name}, you are {date} year{date !== 1 && "s"} old!!
       </p>
     </div>
   );

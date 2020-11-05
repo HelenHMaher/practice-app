@@ -6,7 +6,7 @@ function Nav({ displayStatus, iconType, seed }) {
 
   useEffect(() => {
     displayStatus(display);
-  }, [display]);
+  }, [display, displayStatus]);
 
   return (
     <div className="nav">
